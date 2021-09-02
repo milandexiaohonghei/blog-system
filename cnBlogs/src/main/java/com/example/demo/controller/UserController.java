@@ -61,11 +61,6 @@ public class UserController {
     @ResponseBody
     public String getIndex() {
         log.error("我的日志信息，级别：error");
-        log.warn("我的日志信息，级别：warn");
-        log.info("我的日志信息，级别：info");
-        log.debug("我的日志信息，级别：debug");
-        log.trace("我的日志信息，级别：trace");
-        return "你好，SpringBoot";
     }
 
     @RequestMapping("/login")
