@@ -77,30 +77,6 @@ public class UserController {
             session.setAttribute(AppFinal.USERINFO_SESSIONKEY, user2);
         }
         return user2;
-
-//        // 返回的对象
-//        HashMap<String, Object> map = new HashMap<>();
-//        int status = -1; // 非正常返回
-//        String msg = "未知错误";
-//        String data = "登录失败";
-//        if (user != null &&
-//                user.getUsername().equals("root") &&
-//                user.getPassword().equalsIgnoreCase("root")) {
-//            // 登录信息存储到 Session
-//            HttpSession session = request.getSession();
-//            session.setAttribute(AppFinal.USERINFO_SESSIONKEY, user);
-//            status = 0;
-//            msg = "";
-//            data = "登录成功";
-//        } else {
-//            status = 0;
-//            msg = "用户名错误";
-//            data = "登录失败";
-//        }
-//        map.put("status", status);
-//        map.put("msg", msg);
-//        map.put("data", data);
-//        return map;
     }
 
 
